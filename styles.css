@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #222831;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+.login-box {
+  background: rgba(34, 40, 49, 0.95);
+  margin: 100px auto 0 auto;
+  padding: 2em 2em 1.5em 2em;
+  border-radius: 1em;
+  width: 320px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+  text-align: center;
+}
+.login-field {
+  margin-top: 1em;
+  text-align: left;
+}
+.login-field label {
+  margin-bottom: 0.2em;
+  display: block;
+  color: #ffd369;
+}
+.login-field input {
+  width: 100%;
+  padding: 0.6em;
+  border-radius: 0.4em;
+  border: 1px solid #393e46;
+  background: #393e46;
+  color: #ffd369;
+}
+.glass-btn {
+  margin-top: 1em;
+  background: #393e46;
+  color: #ffd369;
+  border: none;
+  border-radius: 0.4em;
+  padding: 0.8em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 4px #111;
+  transition: background 0.2s;
+}
+.glass-btn:hover {
+  background: #ffd369;
+  color: #222831;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #393e46;
+  padding: 0.8em 2em;
+  color: #ffd369;
+  align-items: center;
+}
+.dashboard {
+  padding: 2em;
+}
+
+#tab-bar {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+.tab {
+  cursor: pointer;
+  padding: 0.7em 1.2em;
+  border-radius: 0.4em;
+  background: #393e46;
+  color: #ffd369;
+  margin-right: 0.5em;
+  box-shadow: 0 2px 8px #111;
+  transition: background 0.15s;
+}
+.tab.selected, .tab:hover {
+  background: #ffd369;
+  color: #222831;
+}
+#tab-content {
+  background: #393e46bb;
+  border-radius: 1em;
+  padding: 1.5em;
+  min-height: 200px;
+}
+
+#login-message {
+  color: #ff6666;
+  margin-top: 1em;
+  min-height: 1.5em;
+}
+
+@media (max-width: 600px) {
+  .dashboard { padding: 1em; }
+  .login-box { width: 90%; margin-top: 30px; }
+}
