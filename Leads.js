@@ -1,6 +1,12 @@
 // Leads.js
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
+// !! Replace with your real keys (make sure the repo is private or use a secrets loader in production) !!
+const SUPABASE_URL = "https://your-project-id.supabase.co";
+const SUPABASE_ANON_KEY = "your-public-anon-key";
+
+export const supabase = createClient(https://drbbxxanlnfttxrkuqzn.supabase.co, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRyYmJ4eGFubG5mdHR4cmt1cXpuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM0NzQ0OTcsImV4cCI6MjA2OTA1MDQ5N30.ZyWy-ru4bs6Wf0NUGTrA9fVeVbgv1rvVwf9YJ70MuSI);
+
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ||
   (typeof window !== 'undefined' && window.env?.NEXT_PUBLIC_SUPABASE_URL);
