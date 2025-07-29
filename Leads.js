@@ -1,5 +1,6 @@
 // Leads.js
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
+
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ||
   (typeof window !== 'undefined' && window.env?.NEXT_PUBLIC_SUPABASE_URL);
